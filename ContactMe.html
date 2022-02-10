@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <h3>My Contact Details</h3>
+    <ul>
+        <li><a href="https://example.com">Website</a></li>
+        <li><a href="mailto:m.bluth@example.com">Email</a></li>
+        <li><a href="tel:+123456789">Phone</a></li>
+    </ul>
+    <form action="mailto:m.bluth@example.com">
+        <table cellpadding=10>
+            <tr>
+                <td>
+                    <label for="Name">Enter Your Name : </label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="DOB">Enter/Select Your DOB : </label>
+                </td>
+                <td>
+                    <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+                        min="2018-06-07T00:00" max="2022-06-14T00:00">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Password">Enter Your Password : </label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="colors">Choose your monster's colors: </label>
+                </td>
+                <td>
+                    <div>
+                        <input type="color" id="head" name="head" value="#e66465">
+                        <label for="head">Head</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="color" id="body" name="body" value="#f6b73c">
+                        <label for="body">Body</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <label for="body">Select a maintenance drone:</label>
+                </td>
+                <td>
+                    <div>
+                        <input type="radio" id="huey" name="drone" value="huey" checked>
+                        <label for="huey">Huey</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="dewey" name="drone" value="dewey">
+                        <label for="dewey">Dewey</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="louie" name="drone" value="louie">
+                        <label for="louie">Louie</label>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <label for="story">Tell us about you :</label>
+                </td>
+                <td>
+                    <textarea id="story" name="story" rows="5" cols="33">I am ..</textarea>
+                </td>
+            </tr>
+            <tr>
+
+                <td colspan="2" align="center">
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
